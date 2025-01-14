@@ -10,6 +10,6 @@ class MenuController extends Controller
     public function getMenus()
     {
         $menus = Menu::getMenuTree();
-        return view('layout.header', compact('menus'));
+        return view('layout.app', compact('menus'));
     }
 }
